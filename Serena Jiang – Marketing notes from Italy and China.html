@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serena Jiang – Marketing notes from Italy and China</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5f9;--fg:#111827;--muted:#59627a;--primary:#2a45e6;--primary-fg:#fff;--border:#d9deea;
+--head:"Bricolage Grotesque","Noto Sans SC","PingFang SC",system-ui,sans-serif;--body:"Figtree","Noto Sans SC","PingFang SC",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--fg:#eef1f8;--muted:#9aa4bd;--primary:#8da0ff;--primary-fg:#0b1020;--border:#222b45;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1020;--fg:#eef1f8;--muted:#9aa4bd;--primary:#8da0ff;--primary-fg:#0b1020;--border:#222b45;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:20px}
+.logo{font:700 18px var(--head);text-decoration:none;margin-right:auto}
+nav{display:flex;gap:22px;font-size:15px;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--fg)}
+#langs{display:flex;border:1px solid var(--border);border-radius:99px;overflow:hidden}
+#langs button{font:500 13px var(--body);color:var(--muted);background:none;border:0;padding:5px 11px;cursor:pointer}
+#langs button[aria-pressed="true"]{background:var(--primary);color:var(--primary-fg)}
+a:focus-visible,button:focus-visible{outline:3px solid color-mix(in srgb,var(--primary) 55%,transparent);outline-offset:3px}
+@media(max-width:720px){nav{display:none}}
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:max(560px,86svh);display:flex;align-items:center;justify-content:center;text-align:center;cursor:crosshair}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;color:var(--primary);pointer-events:none}
+.wash{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 36% 34% at 50% 50%,var(--bg) 0%,transparent 100%)}
+.hero-in{position:relative;max-width:760px;padding:96px 24px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:99px;padding:4px 14px;font-size:13px;color:var(--muted);margin:0 0 22px;background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--primary)}
+h1{font:700 clamp(38px,7vw,70px)/1.04 var(--head);letter-spacing:-.025em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:600px;margin:24px auto 0;text-wrap:pretty}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+.btn{display:inline-flex;align-items:center;height:46px;padding:0 24px;border-radius:99px;font:600 15px var(--body);text-decoration:none;border:1px solid var(--border);background:color-mix(in srgb,var(--bg) 70%,transparent);transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn.p{background:var(--primary);color:var(--primary-fg);border-color:var(--primary)}
+.hint{font-size:13px;color:var(--muted);margin-top:22px}
+/* sections */
+section.s{max-width:1080px;margin:0 auto;padding:88px 24px 0}
+.s h2{font:700 clamp(28px,4vw,40px)/1.12 var(--head);letter-spacing:-.02em;margin:0 0 36px;max-width:620px;text-wrap:balance}
+.grid{display:grid;grid-template-columns:1fr 1.6fr;gap:48px}
+.grid p{margin:0 0 18px;max-width:62ch}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.facts li{padding:14px 0;border-bottom:1px solid var(--border);color:var(--muted);font-size:15px}
+.facts b{display:block;color:var(--fg);font:700 20px var(--head)}
+.note{color:var(--muted);font-size:14px;border-left:3px solid var(--primary);padding-left:14px;margin-top:8px}
+.rows{border-top:1px solid var(--border)}
+.row{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;padding:26px 0;border-bottom:1px solid var(--border)}
+.row h3{font:700 21px/1.25 var(--head);margin:0}
+.row p{margin:0;color:var(--muted);max-width:60ch}
+.lead{color:var(--muted);max-width:62ch;margin:-12px 0 28px}
+.sample{border:1px solid var(--border);border-radius:16px;padding:26px;align-self:start}
+.sample p{margin:0}
+.sample .tag{font-size:13px;color:var(--muted);margin-bottom:16px}
+.sample .zh{font:700 32px/1.3 var(--head);color:var(--primary);margin-bottom:10px}
+.sample .py{margin-bottom:4px}
+.sample .itr,.it{color:var(--muted);font-style:italic}
+.contact{margin-top:88px;padding:72px 24px;border-top:1px solid var(--border);text-align:center}
+.contact h2{margin:0 auto 16px}.contact p{color:var(--muted);max-width:520px;margin:0 auto 28px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:24px 24px 40px}
+@media(max-width:720px){.grid,.row{grid-template-columns:1fr;gap:12px}.grid{gap:32px}section.s{padding-top:64px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#top">Serena Jiang</a>
+<nav><a href="#about" data-i18n="n1"></a><a href="#services" data-i18n="n2"></a><a href="#work" data-i18n="n3"></a><a href="#blog" data-i18n="n4"></a><a href="#chinese4u">CHINESE4U</a></nav>
+<div id="langs" role="group" aria-label="Language"><button type="button" data-l="en">EN</button><button type="button" data-l="it">IT</button><button type="button" data-l="zh">中文</button></div>
+</div></header>
+
+<main id="top">
+<div class="hero" id="sonar">
+<canvas aria-hidden="true"></canvas><div class="wash" aria-hidden="true"></div>
+<div class="hero-in">
+<p class="pill"><i aria-hidden="true"></i><span data-i18n="eyebrow"></span></p>
+<h1 data-i18n="h1"></h1>
+<p class="sub" data-i18n="sub"></p>
+<div class="cta"><a class="btn p" href="#contact" data-i18n="cta1"></a><a class="btn" href="#services" data-i18n="cta2"></a></div>
+<p class="hint" data-i18n="hint"></p>
+</div></div>
+
+<section class="s" id="about"><h2 data-i18n="ab_h"></h2>
+<div class="grid"><ul class="facts">
+<li><b data-i18n="f1b"></b><span data-i18n="f1"></span></li>
+<li><b data-i18n="f2b"></b><span data-i18n="f2"></span></li>
+<li><b data-i18n="f3b"></b><span data-i18n="f3"></span></li></ul>
+<div><p data-i18n="ab1"></p><p data-i18n="ab2"></p><p class="note" data-i18n="ab3"></p></div></div></section>
+
+<section class="s" id="services"><h2 data-i18n="sv_h"></h2><div class="rows">
+<div class="row"><h3 data-i18n="s1h"></h3><p data-i18n="s1p"></p></div>
+<div class="row"><h3 data-i18n="s2h"></h3><p data-i18n="s2p"></p></div>
+<div class="row"><h3 data-i18n="s3h"></h3><p data-i18n="s3p"></p></div>
+<div class="row"><h3 data-i18n="s4h"></h3><p data-i18n="s4p"></p></div></div></section>
+
+<section class="s" id="work"><h2 data-i18n="wk_h"></h2><div class="rows">
+<div class="row"><h3>TP-Link, Italy</h3><p data-i18n="w1p"></p></div>
+<div class="row"><h3>Huawei, Italy ICT</h3><p data-i18n="w2p"></p></div></div>
+<p class="note" style="margin-top:24px" data-i18n="wk_n"></p></section>
+
+<section class="s" id="blog"><h2 data-i18n="in_h"></h2><p class="lead" data-i18n="bl_p"></p><div class="rows">
+<div class="row"><h3 data-i18n="i1"></h3><p data-i18n="i_s"></p></div>
+<div class="row"><h3 data-i18n="i2"></h3><p data-i18n="i_s"></p></div>
+<div class="row"><h3 data-i18n="i3"></h3><p data-i18n="i_s"></p></div></div></section>
+
+<section class="s" id="chinese4u"><h2 data-i18n="c4_h"></h2>
+<div class="grid"><div class="sample" role="group" aria-labelledby="c4tag"><p class="tag" id="c4tag" data-i18n="c4_tag"></p><p class="zh" lang="zh-CN">你好，很高兴认识你。</p><p class="py" lang="zh-Latn">Nǐ hǎo, hěn gāoxìng rènshi nǐ.</p><p class="itr" lang="it">Ciao, piacere di conoscerti.</p></div>
+<div><p data-i18n="c4_p1"></p><p data-i18n="c4_p2"></p><p class="it" lang="it">Una frase di cinese utile, in 30 secondi.</p><p style="margin-top:22px"><a class="btn p" href="https://open.spotify.com/search/CHINESE4U" target="_blank" rel="noopener" data-i18n="c4_btn"></a></p></div></div></section>
+
+<section class="contact" id="contact"><h2 data-i18n="ct_h"></h2><p data-i18n="ct_p"></p>
+<a class="btn p" href="mailto:serena@example.com" data-i18n="ct_b"></a></section>
+</main>
+<footer>© 2026 Serena Jiang</footer>
+
+<script>
+const T={
+en:{ttl:"Serena Jiang – Marketing notes from Italy and China",n1:"About",n2:"Topics",n3:"Experience",n4:"Blog",
+eyebrow:"Marketing notes from Italy and China",
+h1:"Clear signals for brands moving between Italy and China.",
+sub:"Fifteen years in the Italian market, working on marketing and brand presence for TP-Link and Huawei. Here I share what I’ve learned and meet people who think about the same questions.",
+cta1:"Say hello",cta2:"What I share",hint:"Tap anywhere on the field to send a ping.",
+ab_h:"Marketing built on the ground, not on slides.",
+f1b:"15 years",f1:"in marketing, based in Italy",f2b:"2 global brands",f2:"TP-Link and Huawei, supported in the Italian market",f3b:"Italy and China",f3:"market and business context on both sides",
+ab1:"I’m Serena Jiang, a marketing professional based in Italy. Over fifteen years I’ve worked on brand, channel and go-to-market marketing for TP-Link and Huawei, and I currently lead ICT marketing at Huawei Italy.",
+ab2:"This site is a place to share practical observations on the Italian market, brand positioning and marketing planning, and to exchange ideas with peers in Italy and China.",
+ab3:"The views shared here are my own and do not represent my employer.",
+sv_h:"What I share",
+s1h:"Italy go-to-market",s1p:"Observations on how technology brands enter and grow in Italy: positioning, channels, partners.",
+s2h:"Brand and communication",s2p:"Notes on messaging and brand narrative, and how Italian customers and media evaluate technology brands.",
+s3h:"Channel and partner marketing",s3p:"Notes on B2B and ICT marketing with distributors, resellers and integrators: programmes, enablement and joint campaigns.",
+s4h:"Marketing planning",s4p:"How to review what’s working and build a quarterly calendar with channels, cadence and milestones.",
+wk_h:"Selected experience",w1p:"Marketing and brand promotion in the Italian market.",w2p:"Current role: ICT marketing lead for the Italian market.",
+wk_n:"Detailed case studies are in preparation and will be published with the relevant permissions.",
+in_h:"Blog: notes on Italy and China",i1:"How Italian buyers evaluate technology brands",i2:"Lessons from localising a global brand for Italy",i3:"What Chinese companies need to know before entering Italy",i_s:"Coming soon.",
+ct_h:"Let’s exchange ideas",ct_p:"If you work in marketing in Italy or China and want to compare notes, send me a message.",ct_b:"Email me",bl_p:"I post irregularly, whenever I have something worth sharing: how I read the Italian market, what I notice in China, and where the two meet.",c4_h:"CHINESE4U: one Chinese sentence in 30 seconds",c4_tag:"Example of the format",c4_p1:"CHINESE4U is a project I started with my daughter for people in Italy who are curious about Chinese. Each episode is a short audio podcast of about 30 seconds that teaches one useful sentence you can use right away.",c4_p2:"No grammar lectures, just one sentence, how it sounds, and when to say it.",c4_btn:"Listen on Spotify"},
+zh:{ttl:"Serena Jiang – 来自意大利与中国的营销笔记",n1:"关于",n2:"主题",n3:"经历",n4:"博客",
+eyebrow:"来自意大利与中国的营销笔记",
+h1:"为往来于意大利与中国之间的品牌，传递清晰的信号。",
+sub:"15 年意大利市场营销经验，曾参与 TP-Link 与华为在意大利的营销与品牌推广。在这里，我分享所学所思，也希望结识关注同样问题的同行。",
+cta1:"打个招呼",cta2:"我分享什么",hint:"点击画面任意位置，发出一次信号。",
+ab_h:"营销，从一线做起，而不只是写在幻灯片上。",
+f1b:"15 年",f1:"营销经验，常驻意大利",f2b:"2 个全球品牌",f2:"TP-Link 与华为，在意大利市场",f3b:"意大利与中国",f3:"两地的市场与商业视角",
+ab1:"我是 Serena Jiang，常驻意大利的营销人。过去 15 年，我为 TP-Link 和华为做过品牌、渠道与市场进入的营销工作，目前担任华为意大利 ICT 营销负责人。",
+ab2:"这个网站是我分享意大利市场、品牌定位与营销规划实践观察的地方，也希望与意大利和中国的同行交流想法。",
+ab3:"本站观点均为个人立场，不代表我的雇主。",
+sv_h:"我分享的内容",
+s1h:"意大利市场进入",s1p:"关于科技品牌如何进入并在意大利增长的观察：定位、渠道、合作伙伴。",
+s2h:"品牌与传播",s2p:"关于品牌信息与叙事，以及意大利客户与媒体如何评估科技品牌。",
+s3h:"渠道与伙伴营销",s3p:"关于面向分销商、经销商与集成商的 B2B 与 ICT 营销：项目设计、赋能与联合活动。",
+s4h:"营销规划",s4p:"如何复盘现有做法的成效，并制定包含渠道、节奏与里程碑的季度日历。",
+wk_h:"部分经历",w1p:"负责意大利市场的营销与品牌推广。",w2p:"现任：华为意大利 ICT 营销负责人。",
+wk_n:"详细案例正在整理中，将在获得相关授权后发布。",
+in_h:"博客：意大利与中国市场笔记",i1:"意大利买家如何评估科技品牌",i2:"全球品牌本地化到意大利的经验",i3:"中国企业进入意大利前需要了解什么",i_s:"即将发布。",
+ct_h:"欢迎交流",ct_p:"如果你也从事意大利或中国的营销工作，欢迎来信交流。",ct_b:"发邮件给我",bl_p:"不定期更新，有值得分享的内容时才写：我如何理解意大利市场、在中国市场看到的变化，以及两者的交汇点。",c4_h:"CHINESE4U：30 秒学一句中文",c4_tag:"内容形式示例",c4_p1:"CHINESE4U 是我和女儿一起创办的项目，写给在意大利对中文感兴趣的朋友。每期是约 30 秒的语音播客，教你一句马上能用的中文。",c4_p2:"没有冗长的语法讲解，只有一句话、它的发音，以及什么时候说。",c4_btn:"在 Spotify 收听"},
+it:{ttl:"Serena Jiang – Appunti di marketing da Italia e Cina",n1:"Chi sono",n2:"Temi",n3:"Esperienza",n4:"Blog",
+eyebrow:"Appunti di marketing da Italia e Cina",
+h1:"Segnali chiari per i brand che si muovono tra Italia e Cina.",
+sub:"Quindici anni nel mercato italiano, a lavorare su marketing e presenza di brand per TP-Link e Huawei. Qui condivido ciò che ho imparato e incontro persone che si pongono le stesse domande.",
+cta1:"Scrivimi",cta2:"Di cosa scrivo",hint:"Tocca un punto qualsiasi del campo per inviare un segnale.",
+ab_h:"Un marketing costruito sul campo, non sulle slide.",
+f1b:"15 anni",f1:"di marketing, con base in Italia",f2b:"2 brand globali",f2:"TP-Link e Huawei, nel mercato italiano",f3b:"Italia e Cina",f3:"contesto di mercato e di business su entrambi i lati",
+ab1:"Sono Serena Jiang, professionista del marketing con base in Italia. In quindici anni ho lavorato su brand, canali e go-to-market per TP-Link e Huawei, e oggi guido il marketing ICT di Huawei Italia.",
+ab2:"Questo sito è il luogo dove condivido osservazioni pratiche sul mercato italiano, sul posizionamento del brand e sulla pianificazione di marketing, e dove mi confronto con colleghi in Italia e in Cina.",
+ab3:"Le opinioni espresse qui sono personali e non rappresentano il mio datore di lavoro.",
+sv_h:"Di cosa scrivo",
+s1h:"Go-to-market in Italia",s1p:"Osservazioni su come i brand tecnologici entrano e crescono in Italia: posizionamento, canali, partner.",
+s2h:"Brand e comunicazione",s2p:"Appunti su messaggi e narrazione del brand, e su come clienti e media italiani valutano i brand tecnologici.",
+s3h:"Marketing di canale e partner",s3p:"Appunti sul marketing B2B e ICT con distributori, rivenditori e integratori: programmi, formazione e campagne congiunte.",
+s4h:"Pianificazione di marketing",s4p:"Come valutare ciò che funziona e costruire un calendario trimestrale con canali, ritmo e traguardi.",
+wk_h:"Esperienza selezionata",w1p:"Marketing e promozione del brand sul mercato italiano.",w2p:"Ruolo attuale: responsabile marketing ICT per il mercato italiano.",
+wk_n:"Sto preparando casi studio dettagliati, che pubblicherò con le dovute autorizzazioni.",
+in_h:"Blog: appunti su Italia e Cina",bl_p:"Scrivo senza una cadenza fissa, quando ho qualcosa che vale la pena condividere: come leggo il mercato italiano, cosa noto in Cina e dove i due mondi si incontrano.",
+i1:"Come gli acquirenti italiani valutano i brand tecnologici",i2:"Cosa ho imparato localizzando un brand globale per l’Italia",i3:"Cosa devono sapere le aziende cinesi prima di entrare in Italia",i_s:"In arrivo.",
+ct_h:"Scambiamoci idee",ct_p:"Se lavori nel marketing in Italia o in Cina e vuoi confrontarti, scrivimi.",ct_b:"Scrivimi via email",
+c4_h:"CHINESE4U: una frase di cinese in 30 secondi",c4_tag:"Esempio del formato",
+c4_p1:"CHINESE4U è un progetto che ho avviato con mia figlia per chi in Italia è curioso del cinese. Ogni episodio è un breve podcast audio di circa 30 secondi che insegna una frase utile da usare subito.",
+c4_p2:"Niente lezioni di grammatica: solo una frase, come si pronuncia e quando dirla.",c4_btn:"Ascolta su Spotify"}};
+const nl=(navigator.language||"en").toLowerCase();let lang=nl.startsWith("zh")?"zh":nl.startsWith("it")?"it":"en";
+function setLang(l){lang=l;document.documentElement.lang=l==="zh"?"zh-CN":l;
+document.querySelectorAll("[data-i18n]").forEach(e=>{e.textContent=T[l][e.dataset.i18n]});
+document.querySelectorAll("#langs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.l===l)));
+document.title=T[l].ttl}
+document.querySelectorAll("#langs button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.l)));
+setLang(lang);
+
+/* Sonar grid: canvas dot field answering taps with expanding rings */
+(function(){
+const host=document.getElementById("sonar"),canvas=host.querySelector("canvas"),ctx=canvas.getContext("2d");
+if(!ctx)return;
+const o={spacing:26,dot:1.4,base:.28,every:2.4,speed:260,rw:90,amp:2.2,max:6,area:[.22,.18,.78,.82]};
+const rm=matchMedia("(prefers-reduced-motion: reduce)");
+let W=0,H=0,raf=0,timer=0,vis=true,seeded=false,color="",rings=[],next=performance.now()+o.every*1000;
+const readColor=()=>{color=getComputedStyle(canvas).color};
+const add=(x,y,b)=>{readColor();rings.push({x,y,born:b});while(rings.length>o.max)rings.shift()};
+function draw(now){
+const life=(Math.hypot(W,H)+o.rw)/o.speed;
+rings=rings.filter(r=>(now-r.born)/1000<life);
+const live=rings.map(r=>{const a=(now-r.born)/1000,rad=a*o.speed;return{x:r.x,y:r.y,rad,reach:rad+o.rw,fade:1-a/life}});
+ctx.clearRect(0,0,W,H);ctx.fillStyle=color;
+const cols=Math.ceil(W/o.spacing)+1,rows=Math.ceil(H/o.spacing)+1;
+const ox=(W-(cols-1)*o.spacing)/2,oy=(H-(rows-1)*o.spacing)/2,hot=[];
+ctx.globalAlpha=o.base;ctx.beginPath();
+for(let i=0;i<cols;i++){const cx=ox+i*o.spacing;
+for(let j=0;j<rows;j++){const cy=oy+j*o.spacing;let e=0;
+for(const r of live){
+if(Math.abs(cx-r.x)>r.reach||Math.abs(cy-r.y)>r.reach)continue;
+const d=Math.abs(Math.hypot(cx-r.x,cy-r.y)-r.rad);if(d>=o.rw)continue;
+const t=1-d/o.rw,k=t*t*(3-2*t)*r.fade;if(k>e)e=k}
+if(e<.01){ctx.moveTo(cx+o.dot,cy);ctx.arc(cx,cy,o.dot,0,Math.PI*2)}else hot.push(cx,cy,e)}}
+ctx.fill();
+for(let k=0;k<hot.length;k+=3){const e=hot[k+2];
+ctx.globalAlpha=o.base+(1-o.base)*e;ctx.beginPath();
+ctx.arc(hot[k],hot[k+1],o.dot*(1+o.amp*e),0,Math.PI*2);ctx.fill()}
+ctx.globalAlpha=1}
+function resize(){
+const r=host.getBoundingClientRect();W=Math.max(1,Math.round(r.width));H=Math.max(1,Math.round(r.height));
+const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);
+ctx.setTransform(dpr,0,0,dpr,0,0);
+if(!seeded){seeded=true;const[x0,y0,x1,y1]=o.area;
+if(!rm.matches)add(W*(x0+(x1-x0)*.68),H*(y0+(y1-y0)*.34),performance.now()-500)}
+draw(performance.now())}
+function idle(d){clearTimeout(timer);timer=setTimeout(()=>tick(performance.now()),Math.max(16,d))}
+function tick(now){
+raf=0;if(!vis||document.hidden)return;
+if(rm.matches){rings=[];draw(now);return}
+if(now>=next){const[x0,y0,x1,y1]=o.area;add(W*(x0+Math.random()*(x1-x0)),H*(y0+Math.random()*(y1-y0)),now);next=now+o.every*1000}
+draw(now);
+if(rings.length)raf=requestAnimationFrame(tick);else idle(next-now)}
+function wake(){if(!raf){clearTimeout(timer);raf=requestAnimationFrame(tick)}}
+host.addEventListener("pointerdown",e=>{if(rm.matches)return;const r=host.getBoundingClientRect();add(e.clientX-r.left,e.clientY-r.top,performance.now());wake()});
+new ResizeObserver(resize).observe(host);
+new IntersectionObserver(([en])=>{vis=en?en.isIntersecting:true;if(vis)wake()}).observe(host);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)wake()});
+rm.addEventListener("change",wake);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{readColor();wake()});
+readColor();resize();wake()})();
+</script>
+</body>
+</html>
